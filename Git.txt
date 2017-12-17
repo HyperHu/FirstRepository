@@ -18,3 +18,12 @@
 4. same the change (locally)
 
 5. 
+
+
+
+Note:
+    "git reset HEAD <file>" will cancell the previously git add command. 
+        Thus, if you change the file after run add command, the version in stage will lost.
+    "git checkout -- <file>" will cover the work space by using stage file. 
+        Thus, if you change the file after run add command, the version in work space is lost.
+    
