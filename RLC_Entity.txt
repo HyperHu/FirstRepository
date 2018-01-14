@@ -1,0 +1,23 @@
+
+class CRlcEntity
+{
+
+};
+
+class CRlcSdu
+{
+    metadata
+    u8* dataPtr;
+};
++-------+
+|meta   |
++-------+
+|dataPtr|------>[header, payload]
++-------+
+
+class CRlcPdu
+{
+
+}
+
+
