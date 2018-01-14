@@ -1,23 +1,39 @@
 1. find the right repository (branch)
-    in SVN, we use the link like XXXX
+    in SVN, we use the link like https://beisop60.china.nsn-net.net/isource/svnroot/BTS_SC_DSP
     in Git, we use the link like YYYY (https://github.com/HyperHu/FirstRepository.git)
     then what is the difference?
     in SVN, the link is used to determine the branch
+        https://beisop60.china.nsn-net.net/isource/svnroot/BTS_SC_DSP/  + branches/p_nyquist
     in Git, the link is same for all branch in this repository. 
 
 2. check out the source code
     in SVN: svn checkout SVN_Link [-r XXX]
-    in Git: git git_url [local_name], ?? how to define which branch and which reversion?
+    in Git: git clone git_url [local_name], ?? how to define which branch and which reversion?
         -b (--branch) branch_name to define which branch
-        use git checkout HHHH to define the reversion
+            if the branch_name didn't exist, then failed. nothing download.
+        after clone, use "git checkout HHHH" to change the reversion.
 
 3. do some change
     change context of file
     add\del\move files
 
-4. same the change (locally)
+4. save the change (locally)
+    this is the brilliant of git. (IMHO)
 
-5. 
+5. git mergetool
+
+6. rebase and merge.
+    the difference.
+    how to choice.
+
+
+git remote -v
+git remote show origin
+
+
+tracking branch  -->  upstream branch
+git branch -vv
+git checkout --track origin/XXX
 
 
 
