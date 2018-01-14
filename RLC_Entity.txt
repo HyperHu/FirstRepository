@@ -21,3 +21,35 @@ class CRlcPdu
 }
 
 
+----------------------------------------------------
+CRlcEntity
+    CSduTransmitter
+    Tx\Rx Sdu Buffer
+    controller
+    packageMaker
+    Tx\Rx Pdu Buffer
+    CPduTransmitter
+
+
+Public Interface
+control plan
+    setup
+    release
+    reset
+
+To Up layer
+    receiveSdu
+    sendSdu
+
+To Low layer
+    receivePdu
+    sendPdu
+
+other
+    timerExpired
+    transferOpptunityInfo
+    statusReport
+
+
+
+
